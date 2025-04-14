@@ -3,68 +3,75 @@
     font-weight: 400;
     font-style: normal;
   }
-
-body{
-  padding: 0px;
-  margin: 0px;
-  background-color: rgb(20, 20, 20);
-}
-
-header{
-  justify-items: center;
-  margin-top: 20px;
-  background-color: #00000000;
-}
-
-header nav{
-  width: 75%;
-  text-align-last: justify;
-  padding: 8px 16px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 80px;
-}
-
-header nav img {
-  width: 15%;
-}
-
-.hero {
-  background-image: url("assets/img/Red\ Smoke\ PNG.webp");
-  height: 90vh;
-  background-repeat: no-repeat;
-  background-attachment: local;
-  background-position: top;
-  justify-items: center;
-  
-}
-
-.hero:before{
-  content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-image: linear-gradient(to top, #cf4f53 , #bf6c6e, #b47e7f, #a68c8d, #999999, #ffffff);
-mix-blend-mode: color;
-pointer-events: none;
-}
-
-video{
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  z-index: -99;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  
 
-.hero img {
-  height: 53%;
-  position: absolute;
-  justify-self: anchor-center;
-}
+  header{
+    height: 10vh;
+  }
 
-.hero div {
-  position: absolute;
-  justify-self: anchor-center;
-}
+  header img {
+    width: 20%;
+  }
+
+main {
+    height: 90vh;
+    font-family: 'Black Ops One', sans-serif;
+    color: #fff;
+    background: radial-gradient(ellipse at center, #200000 0%, #000000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 480px;
+    background-image: url('fondo-humo-rojo.jpg'); /* Puedes reemplazar por un fondo real */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero img {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    color: #f5f5f5;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px #000;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .cta-buttons a {
+    padding: 1rem 1.5rem;
+    background-color: #d62828;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-buttons a:hover {
+    background-color: #a71d1d;
+  }
